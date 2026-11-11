@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>☀ Weather Forecast</h1>
+            <p>Check the weather anywhere in the world</p>
+        </header>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <section class="weather-card">
+
+            <div class="location">
+                <h2 id="cityName">Search a city</h2>
+                <p id="date">--</p>
+            </div>
+
+            <div class="current-weather">
+                <div class="weather-icon" id="weatherIcon">🌤️</div>
+
+                <div>
+                    <h1 id="temperature">--°C</h1>
+                    <p id="description">Weather condition</p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind Speed</p>
+                    <h3 id="wind">-- km/h</h3>
+                </div>
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <h3 id="feelsLike">--°C</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="forecast-section">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast-container" id="forecast">
+                <p>Search a city to see the forecast.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Weather data powered by Open-Meteo API</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
